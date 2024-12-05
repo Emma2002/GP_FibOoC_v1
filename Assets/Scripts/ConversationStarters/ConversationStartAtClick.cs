@@ -4,7 +4,8 @@ using DialogueEditor;
 public class ConversationStartAtClick : MonoBehaviour
 {
     [SerializeField] private NPCConversation myConversation; // Reference to the conversation asset
-    [SerializeField] private string targetTag = "OutlineSelect"; // Tag for the specific organ or object
+    [SerializeField] private Tag specificOrganTag; // Specific tag for the organ
+    [SerializeField] private string outlineTag = "OutlineSelect"; // General outline tag (kept as a string)
 
     void Update()
     {
@@ -15,14 +16,30 @@ public class ConversationStartAtClick : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.CompareTag(targetTag)) // Check if the clicked object has the correct tag
+                GameObject clickedObject = hit.collider.gameObject;
+
+                // Check for a Tags component on the clicked object
+                Tags objectTags = clickedObject.GetComponent<Tags>();
+
+                if (objectTags != null)
                 {
-                    // Check if the previous conversation is finished (not active)
-                    if (!ConversationManager.Instance.IsConversationStillActive)
+                    // Check if the object has the specific organ tag
+                    if (objectTags.HasTag(specificOrganTag))
                     {
-                        // Start the conversation
-                        ConversationManager.Instance.StartConversation(myConversation);
+                        // Check if the previous conversation is finished (not active)
+                        if (!ConversationManager.Instance.IsConversationStillActive)
+                        {
+                            // Start the conversation
+                            ConversationManager.Instance.StartConversation(myConversation);
+                        }
                     }
+                }
+
+                // Check if the object has the general outline tag (string-based check)
+                else if (clickedObject.CompareTag(outlineTag))
+                {
+                    // Optionally handle other outline-related behavior
+                    Debug.Log("Outline selected but not the organ!");
                 }
             }
         }
