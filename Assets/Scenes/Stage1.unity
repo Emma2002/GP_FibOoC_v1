@@ -594,7 +594,7 @@ MonoBehaviour:
   CurrentIDCounter: 4
   json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":218,\"yPos\":391},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okay\",\"parentUIDs\":[2],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":216,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
     to the lab! Fibrosis can affect different parts of the body. \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":219,\"yPos\":141},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Let\u2019s
-    investigate how it works by studying specific organs. \",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":222,\"yPos\":255},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Choose
+    investigate how it works by studying specific organs. \",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":221,\"yPos\":255},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Choose
     one organ to get started:\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -1314,7 +1314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3873cb8659751074997417887d0277ab, type: 2}
   outlineThickness: 0
   hoverOutlineThickness: 0.013
 --- !u!4 &88066256 stripped
@@ -1354,21 +1353,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5642421354377339475, guid: 3978c27e17fa11048a78688865028b84, type: 3}
---- !u!114 &96113729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96113721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3873cb8659751074997417887d0277ab, type: 2}
-  outlineThickness: 0
-  hoverOutlineThickness: 0.013
 --- !u!4 &98718135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7636078515329145317, guid: 513546a837bb5d44cbbb2f9939336861, type: 3}
@@ -3283,6 +3267,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -9150805837150641849, guid: 36cd29f8021c69349aa56ded54f01949, type: 3}
       insertIndex: -1
       addedObject: {fileID: 850411040}
+    - targetCorrespondingSourceObject: {fileID: -9150805837150641849, guid: 36cd29f8021c69349aa56ded54f01949, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 850411042}
     - targetCorrespondingSourceObject: {fileID: 3511277154132031313, guid: 36cd29f8021c69349aa56ded54f01949, type: 3}
       insertIndex: 2
       addedObject: {fileID: 170255761}
@@ -3452,7 +3439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3873cb8659751074997417887d0277ab, type: 2}
   outlineThickness: 0
   hoverOutlineThickness: 0.013
 --- !u!1001 &171793534
@@ -4738,7 +4724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3873cb8659751074997417887d0277ab, type: 2}
   outlineThickness: 0
   hoverOutlineThickness: 0.013
 --- !u!1001 &255803533
@@ -5096,7 +5081,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 2
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &278034931
 Transform:
@@ -5130,7 +5115,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 1
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &278034933
 MonoBehaviour:
@@ -5149,7 +5134,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &278034934
 MonoBehaviour:
@@ -5734,6 +5719,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 339891476}
     m_Modifications:
+    - target: {fileID: 3130382496819253058, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3900108754347413305, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_textAlignment
       value: 65535
@@ -5750,6 +5739,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConversationManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: OptionImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d7ddcc59fc0c76f42bd69d46907e610b, type: 3}
+    - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: BackgroundImage
+      value: 
+      objectReference: {fileID: 21300000, guid: d7ddcc59fc0c76f42bd69d46907e610b, type: 3}
     - target: {fileID: 3900108755196472087, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5842,6 +5839,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.2281132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.2281132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.2281132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755397112062, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 39.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_textAlignment
       value: 65535
@@ -5861,6 +5878,10 @@ PrefabInstance:
     - target: {fileID: 6116449485086562217, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
       value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449887092502888396, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11006,15 +11027,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3978c27e17fa11048a78688865028b84, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1037179647}
-    - targetCorrespondingSourceObject: {fileID: 2514486019232432417, guid: 3978c27e17fa11048a78688865028b84, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3978c27e17fa11048a78688865028b84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 96113729}
+      addedObject: {fileID: 1037179649}
     - targetCorrespondingSourceObject: {fileID: 2514486019232432417, guid: 3978c27e17fa11048a78688865028b84, type: 3}
       insertIndex: -1
       addedObject: {fileID: 96113725}
-    - targetCorrespondingSourceObject: {fileID: -568441886392540525, guid: 3978c27e17fa11048a78688865028b84, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 919149624}
     - targetCorrespondingSourceObject: {fileID: -568441886392540525, guid: 3978c27e17fa11048a78688865028b84, type: 3}
       insertIndex: -1
       addedObject: {fileID: 919149620}
@@ -13751,6 +13769,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &850411042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 850411038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineThickness: 0
+  hoverOutlineThickness: 0.013
 --- !u!4 &858133101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2665425264791472026, guid: ff25b715f02cfd947b8608c3d7de53c9, type: 3}
@@ -14586,21 +14618,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1430960802441570800, guid: 3978c27e17fa11048a78688865028b84, type: 3}
---- !u!114 &919149624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919149616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 3873cb8659751074997417887d0277ab, type: 2}
-  outlineThickness: 0
-  hoverOutlineThickness: 0.013
 --- !u!1001 &930719068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15983,6 +16000,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1037179649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037179645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineThickness: 0
+  hoverOutlineThickness: 0.013
 --- !u!4 &1041706081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da8d6c6ca953aa24a924db0a93d368ec, type: 3}
@@ -22009,7 +22040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1157815733408451400, guid: 90dbb427ac5963541b1cdbc7520999e3, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1157815733408451400, guid: 90dbb427ac5963541b1cdbc7520999e3, type: 3}
       propertyPath: m_IsActive
@@ -22976,7 +23007,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 4
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1486296381
 MonoBehaviour:
@@ -22995,7 +23026,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f71c0dc03d067a342aa16a51674f6507, type: 3}
+  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1488053950 stripped
 Transform:
@@ -27889,7 +27920,7 @@ GameObject:
   - component: {fileID: 1801551874}
   - component: {fileID: 1801551877}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: CameraOrganLevel
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
