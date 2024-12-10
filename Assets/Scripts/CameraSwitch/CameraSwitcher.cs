@@ -6,12 +6,9 @@ public class SmoothCameraSwitcher : MonoBehaviour
 {
     public Camera Camera1; // Assign in the Inspector
     public Camera Camera2; // Assign in the Inspector
-
     private ConversationManager conversationManager; // Reference to the ConversationManager
 
-    public float transitionSpeed = 2f; // Speed of the transition
-    private bool isTransitioning = false;
-    private float transitionProgress = 0f; // Track the transition progress
+    private bool isTransitioning = false; // Track if the camera is transitioning
     private bool conversationEnded = false; // Flag to track if the conversation has ended
 
     private void Start()
@@ -46,44 +43,34 @@ public class SmoothCameraSwitcher : MonoBehaviour
         // Get the value of 'SwitchToSkinTissue' boolean from the ConversationManager
         bool switchToSkinTissue = conversationManager.GetBool("SwitchToSkinTissue");
 
+        // If the switch flag is set and no transition is in progress, perform the camera switch
         if (switchToSkinTissue && !isTransitioning)
         {
-            StartCoroutine(SmoothSwitch()); // Start the smooth switch coroutine
-            conversationEnded = false; // Reset the flag
+            StartCoroutine(SmoothSwitch()); // Start the camera switch coroutine
+            conversationEnded = false; // Reset the flag to allow the switch again after the next conversation
         }
     }
 
     private IEnumerator SmoothSwitch()
     {
-        isTransitioning = true;
-        Camera fromCamera = Camera1;
-        Camera toCamera = Camera2;
-        AudioListener fromListener = fromCamera.GetComponent<AudioListener>();
-        AudioListener toListener = toCamera.GetComponent<AudioListener>();
+        isTransitioning = true; // Mark the transition as in progress
 
-        // Gradually transition the camera's position and rotation
-        while (transitionProgress < 1f)
-        {
-            transitionProgress += Time.deltaTime * transitionSpeed;
+        // Immediately disable the first camera and enable the second one
+        Camera1.gameObject.SetActive(false); // Disable Camera1
+        Camera2.gameObject.SetActive(true);  // Enable Camera2
 
-            toCamera.transform.position = Vector3.Lerp(fromCamera.transform.position, toCamera.transform.position, transitionProgress);
-            toCamera.transform.rotation = Quaternion.Lerp(fromCamera.transform.rotation, toCamera.transform.rotation, transitionProgress);
+        // Optionally enable the audio listener for the new camera
+        AudioListener fromListener = Camera1.GetComponent<AudioListener>();
+        AudioListener toListener = Camera2.GetComponent<AudioListener>();
+        toListener.enabled = true; // Enable AudioListener on Camera2
 
-            yield return null;
-        }
-
-        // Finalize the transition by disabling the previous camera
-        Camera1.gameObject.SetActive(false);
-        Camera2.gameObject.SetActive(true);
-
-        toListener.enabled = true;
-
-        transitionProgress = 0f;
-        isTransitioning = false;
+        isTransitioning = false; // Transition is complete
+        yield return null;
     }
 
     private void OnDestroy()
     {
+        // Unsubscribe from the OnConversationEnded event to prevent memory leaks
         ConversationManager.OnConversationEnded -= OnConversationEnded;
     }
 }
