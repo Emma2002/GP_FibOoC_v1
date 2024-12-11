@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: a87b0482540e502468601e933ef8990a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bone_Mat
+    second: {fileID: 2100000, guid: 255385824091a8a4c8e8b4fd195dec2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bone_Mat.001
+    second: {fileID: 2100000, guid: 379ba80555c20a541bab22ec32bc6509, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartilage_Mat
+    second: {fileID: 2100000, guid: 658b885531eba074c9c72ee6941e3212, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartilage_Mat.001
+    second: {fileID: 2100000, guid: 7a702ff23e8eac449aa1d37e0a23a286, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gall_Mat
+    second: {fileID: 2100000, guid: 088b77093f70a1b4885b1c2451aec5e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gland_Mat
+    second: {fileID: 2100000, guid: 78645b7c9ca506441ac557720685fb38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gland_Mat.001
+    second: {fileID: 2100000, guid: 0a7948191fbebd44a8d4106dbfef28a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ligament_Mat
+    second: {fileID: 2100000, guid: 63cd84755b6cd7a4689894b54f099a93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Liver_Mat
+    second: {fileID: 2100000, guid: 7bbb280a39eb5c040a9a3de04a8238aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lymph_mat
+    second: {fileID: 2100000, guid: 1592a7d308ae21d43b329c1d90fdabbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VH_M_leftFBXASC032lobarFBXASC032bronchusFBXASC032bronchial_cart
+    second: {fileID: 2100000, guid: a3d1af29e69923a42b02961e3d4fc87b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VH_M_leftFBXASC032mainFBXASC032bronchusFBXASC032bronchial_carti
+    second: {fileID: 2100000, guid: 797c2039de009224e9d62e81f5a63cef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VH_M_leftFBXASC032tertiaryFBXASC032bronchial_cartilage_ncl1_2
+    second: {fileID: 2100000, guid: 49a79a0e1c4117c45be2001f7c1ffc88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VH_M_rightFBXASC032lobarFBXASC032bronchial_cartilage2_ncl1_2
+    second: {fileID: 2100000, guid: 73e477b48c1c10b4986650457d74944a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VH_M_rightFBXASC032mainFBXASC032bronchusFBXASC032bronchial_cart
+    second: {fileID: 2100000, guid: 6a3aef8b9c41d1f42959c51923c400ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VH_M_rightFBXASC032tertiaryFBXASC032bronchial_cartilage1_ncl1_2
+    second: {fileID: 2100000, guid: 5574f452c65a5174896a749fbe0d06cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: artery_mat
+    second: {fileID: 2100000, guid: 05e9dd52ed47de3429fb4359ca81e7d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: artery_mat.001
+    second: {fileID: 2100000, guid: c1c01b00f4bdca64aa9dc46c9262af14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bile_mat
+    second: {fileID: 2100000, guid: ed1230388c9e43144bab6084a29072eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brain_mat
+    second: {fileID: 2100000, guid: de93da795d024d04ba1edad1ff9065c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colon_mat
+    second: {fileID: 2100000, guid: b47c74fe66b8d7345b009fae95161f35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012022_lung_mat
+    second: {fileID: 2100000, guid: bba6d9e097fad0b48bb59f3df5fe4814, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012022_muscle_mat
+    second: {fileID: 2100000, guid: f819f22076793074e8430d7df4ad9e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012022_pasted__artery_mat
+    second: {fileID: 2100000, guid: 3d30a8cff7b7e5241a1df4c4aad3d4d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012022_pasted__retina3
+    second: {fileID: 2100000, guid: d241f618d5dafa14ea55d908a6f2edf4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012022_pasted__vein_mat
+    second: {fileID: 2100000, guid: 53dcd09486dc24142b2751f5c01764f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012022_pasted__vein_mat.001
+    second: {fileID: 2100000, guid: abfc1296d34237842b9f81660bf4efa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012024_pasted__artery_mat
+    second: {fileID: 2100000, guid: a889621dfaeaeaa42afd7da694126b07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012024_pasted__retina3
+    second: {fileID: 2100000, guid: d8eb3f96d92f58045bcb753717b065df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012024_pasted__vein_mat
+    second: {fileID: 2100000, guid: 796067885d9d3d84eb71141b5eab403e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012024_pasted__vein_mat.001
+    second: {fileID: 2100000, guid: 28707cdf0364e7e468fc30e92437cffb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_Bone_Mat
+    second: {fileID: 2100000, guid: ca999f034a3364f499159128ddaa0b80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_Cornea_mat
+    second: {fileID: 2100000, guid: 099e0b56e3d0d2540ba9dddf0e3db014, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_Eyeball_Mat
+    second: {fileID: 2100000, guid: 57a20c29fd0702b4596423a1f1b4d118, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_Ora_serrata_Mat
+    second: {fileID: 2100000, guid: 2aa2167d35093fb4cb26ed619dbfb7e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_Skin_Mat
+    second: {fileID: 2100000, guid: 8110f246d49d96341825376587b000a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_brain_mat1
+    second: {fileID: 2100000, guid: 0e8d104771759e44a8e166e027258799, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_humor_mat
+    second: {fileID: 2100000, guid: fbc19628e262b164e98fe98a9b505929, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_humor_mat.001
+    second: {fileID: 2100000, guid: 7c76ade5aff3fd3438e199dce9525065, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_iris_mat
+    second: {fileID: 2100000, guid: c7307ff7cf5bc8841bc4aefe165380c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_iris_mat.001
+    second: {fileID: 2100000, guid: 5bf1994332a6bea45b9d6d3b72d36c6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_lens1
+    second: {fileID: 2100000, guid: 705a698fdb87a6c4698edb76bfe3a08c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_lens1.001
+    second: {fileID: 2100000, guid: b046d3d2112b1504e89f49852cb91e48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_limbus1
+    second: {fileID: 2100000, guid: d5de6182874ab85439812077b99aa533, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_lung_mat
+    second: {fileID: 2100000, guid: d705e2eb384dadf42a13bb9bb2de41af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_lung_mat.001
+    second: {fileID: 2100000, guid: 81cb5831e1ee86a4d80ed3833459d0b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_meniscus_mat
+    second: {fileID: 2100000, guid: 7138dfaba1841cd46896f0ff90cb9ba1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_pasted__retina3
+    second: {fileID: 2100000, guid: 12ca1bca25f562e409c04ceaa1042f02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_pupil1
+    second: {fileID: 2100000, guid: 0fdee7ac6013e264ab86235100321569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012042_retina1
+    second: {fileID: 2100000, guid: 8c639ca289b0f9f4d81e09ab4d11a3b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_Bone_Mat
+    second: {fileID: 2100000, guid: a48dd9d6d878645479266a17198f2f09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_Cornea_mat
+    second: {fileID: 2100000, guid: ef21402861c86024fb298e65784369d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_Ora_serrata_Mat
+    second: {fileID: 2100000, guid: b73d289ecbf167e40bc564e2c8f8b0d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_Skin_Mat
+    second: {fileID: 2100000, guid: 199bc293ef99c784dba9bf18ef7d4d59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_brain_mat1
+    second: {fileID: 2100000, guid: bfb35d0d5dd40d14bb6cbca8942c08be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_choroid_mat
+    second: {fileID: 2100000, guid: f184e3e274905674a8e7a4b4fb564df7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_fovea_mat
+    second: {fileID: 2100000, guid: 06bc3efb5049b20458482bf6238619f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_iris_mat
+    second: {fileID: 2100000, guid: 4003071ce6a395342ab9bc9c83a4b597, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_limbus1
+    second: {fileID: 2100000, guid: 241cee963f3ed3643ba9d90ebcdd3613, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_macula
+    second: {fileID: 2100000, guid: 982157aa628a3b6479d03df3108fa618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012043_meniscus_mat
+    second: {fileID: 2100000, guid: b6ea0b4f54f62264cae3a1a6bd441117, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012044_lung_mat
+    second: {fileID: 2100000, guid: cca0c7c5d67ca404f8eaf02e8c3c8683, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012045_lung_mat
+    second: {fileID: 2100000, guid: efbaf4b25bc980747994ea79d3615be6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_edits_012046_Eyeball_Mat
+    second: {fileID: 2100000, guid: 797df06533cb60547b5e82487c8395d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: genitalDuct_mat
+    second: {fileID: 2100000, guid: 3dcafdc9ac660254990091875832eab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: heart_mat
+    second: {fileID: 2100000, guid: 5fe22854b0714cf43af90bf751d17d69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: heart_mat.001
+    second: {fileID: 2100000, guid: 9045f85c678708b4ea8f83ed370c8435, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kidney_pyramids_mat
+    second: {fileID: 2100000, guid: 3a52a5cbacd831b40a0fe8705803acba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kidneycapsule_mat
+    second: {fileID: 2100000, guid: 99333cd6c6e888340901b95fadd2f8ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kidneycortex_medulla_mat
+    second: {fileID: 2100000, guid: 9b7511867cc5d354fa2dca18b9294c88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lung_mat
+    second: {fileID: 2100000, guid: 2f468be391082c94f8d23b5aade01a19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lymph_cortex_mat
+    second: {fileID: 2100000, guid: 5d0b9dbd56609cf47ac78a0d24725966, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lymph_medulla_mat
+    second: {fileID: 2100000, guid: eb1092fbe7c66b043bf26a451ddcdba4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lymph_paracortex_mat
+    second: {fileID: 2100000, guid: 170cf563baf84994bb8a46db859cedf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: meniscus_mat
+    second: {fileID: 2100000, guid: 43ded1f2318bd154fb14e07061f0476a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mucosa_mat
+    second: {fileID: 2100000, guid: 71ebdffec08a92a4f912f291feeac1f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muscle_Mat
+    second: {fileID: 2100000, guid: 3fad3de2b75e6af49a883ad00e117f17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: muscle_Mat.001
+    second: {fileID: 2100000, guid: 7b50d0c99dfe2db46857bd88598f357e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Bone_Mat
+    second: {fileID: 2100000, guid: a8e683a0ac2f5034d94665501cdf93a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Skin_Mat
+    second: {fileID: 2100000, guid: c243c84d17a98bd43805cba24502245a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__choroid_mat
+    second: {fileID: 2100000, guid: 9e45cc9bf31d86a45bab352ad2dea277, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__dura_mater_mat
+    second: {fileID: 2100000, guid: 35160812b53599f4d8d9e5b390f201b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__fovea_mat
+    second: {fileID: 2100000, guid: c84366a9ef40341419cb5b563a0338af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__humours_mat
+    second: {fileID: 2100000, guid: 4efaac4f08967d94daa39cb530fefaf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__iris_mat
+    second: {fileID: 2100000, guid: de9a02b04691503458decc7ab44b6012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__macula_mat
+    second: {fileID: 2100000, guid: 5ce0f5698045bfc479baf16329c1dc1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__muscle_mat
+    second: {fileID: 2100000, guid: ec99e902fdae71340bc144cff90475e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__dura_mater_mat
+    second: {fileID: 2100000, guid: 81baa565fa21fd143acb0669218babf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__conjunctiva_Mat1
+    second: {fileID: 2100000, guid: 732c192d83e70ee4783eaa4e76f790ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pasted__pasted__pasted__conjunctiva_Mat1.001
+    second: {fileID: 2100000, guid: 8d48a370fe12c364182cc956e6cb7889, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__pupil_mat
+    second: {fileID: 2100000, guid: 50a0ebdf9ee2f0f41bc9d391dedea069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__retina2
+    second: {fileID: 2100000, guid: 4d89cc0217a502049af02649647056de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__retina_mat
+    second: {fileID: 2100000, guid: fbcb35422568eec4abea4df02b84fb80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong4
+    second: {fileID: 2100000, guid: 98547bd93a9e8804b852d21c70c021c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: retina
+    second: {fileID: 2100000, guid: 61197305869bd4b4e8f05bee654993d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sm_intestine
+    second: {fileID: 2100000, guid: da8856ff701701942840132c96920113, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spleen_mat
+    second: {fileID: 2100000, guid: 97f6a00cd1f5a5f48991d2d20cae0d69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ureter_mat
+    second: {fileID: 2100000, guid: eebb1838a90e618489d890fde2528e9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ureter_mat.001
+    second: {fileID: 2100000, guid: 14828c8ad95d7444b9e3a012ab0098f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vein_mat
+    second: {fileID: 2100000, guid: 25440ec708d68f24296199738969061f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vein_mat.001
+    second: {fileID: 2100000, guid: 54877adb9bc511642919ad9debb81af6, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
