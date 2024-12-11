@@ -1,4 +1,5 @@
 using UnityEngine;
+using DialogueEditor;
 
 public class HoverOutline : MonoBehaviour
 {
@@ -19,18 +20,25 @@ public class HoverOutline : MonoBehaviour
         UpdateOutlineThickness(outlineThickness);
     }
 
-    // When the mouse enters the object (parent object)
-    void OnMouseEnter()
+   void OnMouseEnter()
     {
-        // Change outline thickness when hovered
-        UpdateOutlineThickness(hoverOutlineThickness);
+        // Check if a conversation is still active
+        if (!ConversationManager.Instance.IsConversationStillActive)
+        {
+            // Change outline thickness when hovered
+            UpdateOutlineThickness(hoverOutlineThickness);
+        }
     }
 
     // When the mouse exits the object (parent object)
     void OnMouseExit()
     {
-        // Reset outline thickness to initial value
-        UpdateOutlineThickness(outlineThickness);
+        // Check if a conversation is still active
+        if (!ConversationManager.Instance.IsConversationStillActive)
+        {
+            // Reset outline thickness to initial value
+            UpdateOutlineThickness(outlineThickness);
+        }
     }
 
     private void UpdateOutlineThickness(float thickness)
