@@ -73,4 +73,9 @@ public class SmoothCameraSwitcher : MonoBehaviour
         // Unsubscribe from the OnConversationEnded event to prevent memory leaks
         ConversationManager.OnConversationEnded -= OnConversationEnded;
     }
+
+    public bool IsCameraSwitchComplete()
+    {
+        return !isTransitioning; // Return true if the camera switch is complete
+    }
 }

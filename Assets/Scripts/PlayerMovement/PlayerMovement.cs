@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DialogueEditor;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -35,7 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
-    [HideInInspector] public TextMeshProUGUI text_speed;
+
+    // [HideInInspector] public TextMeshProUGUI text_speed;
 
     private void Start()
     {
@@ -49,10 +52,10 @@ public class PlayerMovement : MonoBehaviour
     {
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-
+        
         MyInput();
         SpeedControl();
-
+        
         // handle drag
         if (grounded)
             rb.linearDamping = groundDrag;
@@ -62,7 +65,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!ConversationManager.Instance.IsConversationStillActive)
+        {
         MovePlayer();
+        }
     }
 
     private void MyInput()
@@ -106,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
 
-        text_speed.SetText("Speed: " + flatVel.magnitude);
+            // text_speed.SetText("Speed: " + flatVel.magnitude);
     }
 
     private void Jump()

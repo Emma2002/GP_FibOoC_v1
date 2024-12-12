@@ -32,14 +32,20 @@ public class ConversationStarterTissueLevel : MonoBehaviour
     }
 
     private IEnumerator StartConversationWithDelay()
+{   
+    // Wait for the camera to finish switching (assuming cameraSwitcher has a method like IsCameraSwitchComplete())
+    while (!cameraSwitcher.IsCameraSwitchComplete()) 
     {
-        // Wait for the specified delay
-        yield return new WaitForSeconds(delayTime);
-
-        // Start the conversation
-        ConversationManager.Instance.StartConversation(myConversation);
-        conversationStarted = true; // Prevent multiple starts
-
-        Debug.Log("Conversation started at Tissue Level!");
+        yield return null; // Wait until the camera has finished its transition
     }
+
+    // Wait a little longer before starting the conversation, if needed
+    yield return new WaitForSeconds(delayTime);
+
+    // Start the conversation
+    ConversationManager.Instance.StartConversation(myConversation);
+    conversationStarted = true; // Prevent multiple starts
+
+    Debug.Log("Conversation started at Tissue Level!");
+}
 }
