@@ -9,6 +9,31 @@ public class ConversationStartAtClick : MonoBehaviour
 
     void Update()
     {
+        // Debugging: Check for null references early
+        if (myConversation == null)
+        {
+            Debug.LogError($"{name}: No conversation assigned to myConversation!", this);
+            return;
+        }
+
+        if (specificOrganTag == null)
+        {
+            Debug.LogError($"{name}: No specificOrganTag assigned!", this);
+            return;
+        }
+
+        if (Camera.main == null)
+        {
+            Debug.LogError("No camera tagged as MainCamera found in the scene!");
+            return;
+        }
+
+        if (ConversationManager.Instance == null)
+        {
+            Debug.LogError("ConversationManager is not initialized! Ensure Dialogue Editor is properly set up.");
+            return;
+        }
+        
         if (Input.GetMouseButtonDown(0)) // Left mouse button click
         {
             RaycastHit hit;

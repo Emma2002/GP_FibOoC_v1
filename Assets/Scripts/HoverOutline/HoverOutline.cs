@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using DialogueEditor;
 
 public class HoverOutline : MonoBehaviour
@@ -7,6 +8,7 @@ public class HoverOutline : MonoBehaviour
     private MaterialPropertyBlock propertyBlock;
     public float outlineThickness = 0.0f; // Initial outline thickness
     public float hoverOutlineThickness = 0.013f; // Outline thickness when hovered
+
 
     void Start()
     {

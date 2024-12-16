@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using DialogueEditor;
 
-public class SmoothCameraSwitcher : MonoBehaviour
+public class CameraSwitcher : MonoBehaviour
 {
     public Camera Camera1; // Assign in the Inspector
     public Camera Camera2; // Assign in the Inspector
