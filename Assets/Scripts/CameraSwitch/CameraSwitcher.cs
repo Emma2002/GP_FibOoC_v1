@@ -1,13 +1,15 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
 public class SmoothCameraSwitcher : MonoBehaviour
 {
-    public Camera Camera1; // Assign in the Inspector
-    public Camera Camera2; // Assign in the Inspector
-    private ConversationManager conversationManager; // Reference to the ConversationManager
+    [Header("Camera Settings")]
+    [SerializeField] private List<Camera> cameras; // List of cameras to switch between (assign in the Inspector)
+    [SerializeField] private int defaultActiveCameraIndex = 0; // The index of the default active camera
 
+    private ConversationManager conversationManager; // Reference to the ConversationManager
     private bool isTransitioning = false; // Track if the camera is transitioning
     private bool conversationEnded = false; // Flag to track if the conversation has ended
 
@@ -19,15 +21,16 @@ public class SmoothCameraSwitcher : MonoBehaviour
         if (conversationManager == null)
         {
             Debug.LogError("ConversationManager not found in the scene!");
+            return;
         }
-        else
-        {
-            // Subscribe to the static OnConversationEnded event
-            ConversationManager.OnConversationEnded += OnConversationEnded;
-        }
+
+        // Subscribe to the static OnConversationEnded event
+        ConversationManager.OnConversationEnded += OnConversationEnded;
+
+        // Activate the default camera at the start
+        ActivateCamera(defaultActiveCameraIndex);
     }
 
-    // Callback for when the conversation ends
     private void OnConversationEnded()
     {
         conversationEnded = true;
@@ -35,37 +38,59 @@ public class SmoothCameraSwitcher : MonoBehaviour
 
     private void Update()
     {
-        if (conversationManager == null || !conversationEnded)
+        if (conversationManager == null || !conversationEnded || isTransitioning)
         {
-            return; // Exit if the conversationManager is null or conversation has not ended
+            return; // Exit if no valid conversationManager, conversation hasn't ended, or a transition is in progress
         }
 
-        // Get the value of 'SwitchToSkinTissue' boolean from the ConversationManager
-        bool switchToSkinTissue = conversationManager.GetBool("SwitchToSkinTissue");
-
-        // If the switch flag is set and no transition is in progress, perform the camera switch
-        if (switchToSkinTissue && !isTransitioning)
+        // Check conditions for camera switching based on bools
+        if (conversationManager.GetBool("SwitchToSkinTissue"))
         {
-            StartCoroutine(SmoothSwitch()); // Start the camera switch coroutine
-            conversationEnded = false; // Reset the flag to allow the switch again after the next conversation
+            StartCoroutine(SmoothSwitch(1)); // Switch to Camera 2 (index 1)
+            conversationEnded = false;
+        }
+        else if (conversationManager.GetBool("SwitchToResearchLevel"))
+        {
+            StartCoroutine(SmoothSwitch(2)); // Switch to Camera 3 (index 2)
+            conversationEnded = false;
         }
     }
 
-    private IEnumerator SmoothSwitch()
+    private IEnumerator SmoothSwitch(int targetCameraIndex)
     {
         isTransitioning = true; // Mark the transition as in progress
 
-        // Immediately disable the first camera and enable the second one
-        Camera1.gameObject.SetActive(false); // Disable Camera1
-        Camera2.gameObject.SetActive(true);  // Enable Camera2
+        // Disable all cameras first
+        foreach (Camera cam in cameras)
+        {
+            cam.gameObject.SetActive(false);
+        }
 
-        // Optionally enable the audio listener for the new camera
-        AudioListener fromListener = Camera1.GetComponent<AudioListener>();
-        AudioListener toListener = Camera2.GetComponent<AudioListener>();
-        toListener.enabled = true; // Enable AudioListener on Camera2
+        // Enable the target camera
+        cameras[targetCameraIndex].gameObject.SetActive(true);
 
-        isTransitioning = false; // Transition is complete
-        yield return null;
+        // Handle AudioListeners: enable only for the active camera
+        foreach (Camera cam in cameras)
+        {
+            AudioListener listener = cam.GetComponent<AudioListener>();
+            if (listener != null)
+                listener.enabled = cam.gameObject.activeSelf;
+        }
+
+        yield return null; // Optional: wait for one frame if needed
+        isTransitioning = false; // Mark the transition as complete
+    }
+
+    private void ActivateCamera(int cameraIndex)
+    {
+        // Ensure all cameras are deactivated except the one at cameraIndex
+        for (int i = 0; i < cameras.Count; i++)
+        {
+            cameras[i].gameObject.SetActive(i == cameraIndex);
+            AudioListener listener = cameras[i].GetComponent<AudioListener>();
+            if (listener != null)
+                listener.enabled = i == cameraIndex;
+        }
     }
 
     private void OnDestroy()

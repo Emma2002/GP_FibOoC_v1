@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuScreen.unity
+    guid: 8e5baf9c10ec9074fa2cfeccf73fbddc
+  - enabled: 1
     path: Assets/Scenes/Level1FibrosisExplanation.unity
     guid: 2f4b9fbdbb2efcd4b9610e20e86c3c02
   - enabled: 1
