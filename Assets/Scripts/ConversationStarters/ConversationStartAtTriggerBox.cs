@@ -28,11 +28,16 @@ public class ConversationStartAtTriggerBox : MonoBehaviour
             // Update the counter text
             if (counterText != null)
             {
-                counterText.text = $"Chambers discovered: {discoveredRooms}/{totalRooms}";
+                counterText.text = $"Key components discovered: {discoveredRooms}/{totalRooms}";
             }
             Debug.Log($"Room discovered. Total discovered: {discoveredRooms}/{totalRooms}");
         }
     
+        }
+        
+       public static int ReturnDiscoveredRooms()
+        {
+            return discoveredRooms;
         }
     }
 
