@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuScreen.unity
+    path: Assets/Scenes/01_MenuScreen.unity
     guid: 8e5baf9c10ec9074fa2cfeccf73fbddc
   - enabled: 1
-    path: Assets/Scenes/Level1FibrosisExplanation.unity
+    path: Assets/Scenes/02_Level1FibrosisExplanation.unity
     guid: 2f4b9fbdbb2efcd4b9610e20e86c3c02
   - enabled: 1
-    path: Assets/Scenes/Level2OrganOnChip.unity
+    path: Assets/Scenes/03_Level2OrganOnChip.unity
     guid: c6e6767c65b26cc47b0be05cff345cf9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}

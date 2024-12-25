@@ -22,6 +22,6 @@ public class SceneSwitcher : MonoBehaviour
     }
     void ChangeScene()
     {
-        SceneManager.LoadScene("Level2OrganOnChip");
+        SceneManager.LoadScene("03_Level2OrganOnChip");
     }
 }

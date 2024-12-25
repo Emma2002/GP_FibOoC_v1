@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame(){
-        SceneManager.LoadScene("Level1FibrosisExplanation");
+        SceneManager.LoadScene("02_Level1FibrosisExplanation");
     }
 
     public void QuitGame()
