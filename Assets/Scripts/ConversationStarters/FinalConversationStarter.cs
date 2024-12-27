@@ -1,6 +1,7 @@
 using UnityEngine;
 using DialogueEditor;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class FinalConversationStarter : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class FinalConversationStarter : MonoBehaviour
                 ConversationManager.Instance.StartConversation(finalConversation);
                 conversationStarted = true;
             }
+        }
+        if(ConversationManager.Instance.GetBool("SwitchEndMenu") == true)
+        {
+            SceneManager.LoadScene("04_EndMenu");
         }
     }
 }
