@@ -29,7 +29,6 @@ public class ConversationStarter : MonoBehaviour
             HasAnsweredCorrect = false;
             UpdateScoreText();
         }
-        Debug.Log("Answered Correct count2: " + AnsweredCorrectCount);
     }
 
      private void UpdateScoreText()
