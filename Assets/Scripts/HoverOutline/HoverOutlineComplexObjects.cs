@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using DialogueEditor;
 
-public class HoverOutline : MonoBehaviour
+public class HoverOutlineComplexObjects : MonoBehaviour
 {
     private Renderer[] childRenderers; // Array to hold the renderers of all children
     private MaterialPropertyBlock propertyBlock;
