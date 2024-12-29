@@ -9,6 +9,7 @@ public class ConversationStartAtClick : MonoBehaviour
 
     void Update()
     {
+
         // Debugging: Check for null references early
         if (myConversation == null)
         {

@@ -26,7 +26,7 @@ public class DisplayImage : MonoBehaviour
         if (ConversationManager.Instance.GetBool("ShowImageOrVideo") == false)
         {
             imageComponent.gameObject.SetActive(false);
-        }
+        }   
     }
 }
 
