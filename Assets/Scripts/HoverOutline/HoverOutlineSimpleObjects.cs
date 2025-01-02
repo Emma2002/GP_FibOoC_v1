@@ -25,7 +25,7 @@ public class HoverOutlineSimpleObjects : MonoBehaviour
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit)) // Make sure you have EventSystem in the hierarchy before using EventSystem
         {
             highlight = raycastHit.transform;
-            if (highlight.CompareTag("OutlineSelect") && highlight != null && !ConversationManager.Instance.IsConversationStillActive) // Check if the conversation is over
+            if (highlight.CompareTag("OutlineSelectSimple") && highlight != null && !ConversationManager.Instance.IsConversationStillActive) // Check if the conversation is over
             {
                 Outline outline = highlight.gameObject.GetComponent<Outline>();
                 
