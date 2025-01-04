@@ -10,6 +10,7 @@ public class ConversationStartAtTriggerBox : MonoBehaviour
     private bool hasStartedConversation = false;
     [SerializeField] private TextMeshProUGUI counterText; // Assign the TextMeshProUGUI in the Inspector
     [SerializeField] private int totalRooms = 5; // Total number of rooms to discover
+    [SerializeField] private GameObject chamberMark;
      private static int discoveredRooms = 0; // Tracks how many rooms have been discovered
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +20,7 @@ public class ConversationStartAtTriggerBox : MonoBehaviour
         {
             hasStartedConversation = true; // Set the flag to prevent starting again
             ConversationManager.Instance.StartConversation(myConversation);
+            chamberMark.SetActive(false);
             Debug.Log("Conversation should start");
 
 
