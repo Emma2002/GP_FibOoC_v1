@@ -17,7 +17,7 @@ public class DisplayImage : MonoBehaviour
         imageComponent.gameObject.SetActive(false);
 
         originalFloatY = dialogueScreen.transform.position.y;
-        Debug.Log("The original Float issssssss: " + originalFloatY);
+        // Debug.Log("The original Float issssssss: " + originalFloatY);
         
         // SetDialogueScreenPosition(false);
       
@@ -27,8 +27,8 @@ public class DisplayImage : MonoBehaviour
     {
         // Check if the boolean has changed and update the image visibility
         bool showImage = ConversationManager.Instance.GetBool(startVideoBool);
-        Debug.Log("Status of the image bool: " + showImage);
-        Debug.Log(ConversationManager.Instance.GetBool(startVideoBool));
+        // Debug.Log("Status of the image bool: " + showImage);
+        // Debug.Log(ConversationManager.Instance.GetBool(startVideoBool));
         
         if (ConversationManager.Instance.GetBool(startVideoBool) == true)
         {

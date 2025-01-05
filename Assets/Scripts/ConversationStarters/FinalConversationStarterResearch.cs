@@ -11,7 +11,6 @@ public class FinalConversationStarterResearch : MonoBehaviour
     private void Update()
     {
         // Debugging: Log the current selected count from ConversationStartAtResearchClick
-        Debug.Log($"Selected Object Count: {ConversationStartAtResearchClick.returnCellCount()}/{objectsRequired}");
 
         // Trigger the final conversation when the required count is met
         if (!finalConversationStarted && ConversationStartAtResearchClick.returnCellCount() == objectsRequired)
@@ -20,7 +19,6 @@ public class FinalConversationStarterResearch : MonoBehaviour
             {
                 ConversationManager.Instance.StartConversation(finalConversation);
                 finalConversationStarted = true; // Prevent multiple starts
-                Debug.Log("Final conversation started.");
             }
         }
     }

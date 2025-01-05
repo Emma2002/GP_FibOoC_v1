@@ -18,7 +18,6 @@ public class ConversationStartAtResearchClick : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Cell Count: " + cellCount);
 
         // Debounce clicks based on time
         if (!canClick || Time.time - lastClickTime < clickDelay)
@@ -35,7 +34,6 @@ public class ConversationStartAtResearchClick : MonoBehaviour
                 GameObject clickedObject = hit.collider.gameObject;
 
                 // Debugging hit object
-                Debug.Log("Hit object: " + clickedObject.name);
 
                 // Check for a Tags component on the clicked object
                 Tags objectTags = clickedObject.GetComponent<Tags>();

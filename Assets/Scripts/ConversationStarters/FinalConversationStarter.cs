@@ -9,7 +9,7 @@ public class FinalConversationStarter : MonoBehaviour
     private bool conversationStarted = false;
 
     private void Update() {
-        Debug.Log("FinalConversation counts " + ConversationStartAtTriggerBox.ReturnDiscoveredRooms() + " Rooms");
+        // Debug.Log("FinalConversation counts " + ConversationStartAtTriggerBox.ReturnDiscoveredRooms() + " Rooms");
         if(ConversationStartAtTriggerBox.ReturnDiscoveredRooms() == 5 && !conversationStarted)
         {
             if(!ConversationManager.Instance.IsConversationStillActive)

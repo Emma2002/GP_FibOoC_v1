@@ -21,7 +21,7 @@ public class ConversationStartAtTriggerBox : MonoBehaviour
             hasStartedConversation = true; // Set the flag to prevent starting again
             ConversationManager.Instance.StartConversation(myConversation);
             chamberMark.SetActive(false);
-            Debug.Log("Conversation should start");
+            // Debug.Log("Conversation should start");
 
 
               // Track room discovery
@@ -32,7 +32,7 @@ public class ConversationStartAtTriggerBox : MonoBehaviour
             {
                 counterText.text = $"Key components discovered: {discoveredRooms}/{totalRooms}";
             }
-            Debug.Log($"Room discovered. Total discovered: {discoveredRooms}/{totalRooms}");
+            // Debug.Log($"Room discovered. Total discovered: {discoveredRooms}/{totalRooms}");
         }
     
         }

@@ -18,7 +18,6 @@ public class ConversationStartAtCellClick : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Cell Count: " + cellCount);
 
         // Debounce clicks based on time
         if (!canClick || Time.time - lastClickTime < clickDelay)
@@ -79,7 +78,6 @@ public class ConversationStartAtCellClick : MonoBehaviour
                     Debug.Log("Outline selected but not the organ!");
                 }
             }
-
             // Start the cooldown timer for clicking
             StartCoroutine(ResetClickFlag());
         }

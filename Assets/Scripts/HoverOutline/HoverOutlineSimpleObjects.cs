@@ -6,46 +6,47 @@ using DialogueEditor;
 
 public class HoverOutlineSimpleObjects : MonoBehaviour
 {
-    private Transform highlight;
+    private Transform currentHighlight;  // Stores the currently highlighted object
     private RaycastHit raycastHit;
 
     [SerializeField] 
-    private float outlineWidth = 70.0f;  // This will allow you to adjust the outline width from the Inspector
+    private float outlineWidth = 70.0f;  // Adjustable outline width
 
     void Update()
     {
-        // Highlight
-        if (highlight != null)
+        // Disable outline for the previously highlighted object if it's not the current highlight anymore
+        if (currentHighlight != null)
         {
-            highlight.gameObject.GetComponent<Outline>().enabled = false;
-            highlight = null;
+            Outline previousOutline = currentHighlight.gameObject.GetComponent<Outline>();
+            if (previousOutline != null)
+            {
+                previousOutline.enabled = false;
+            }
+            currentHighlight = null;  // Reset the current highlight
         }
 
+        // Perform a raycast from the mouse position
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit)) // Make sure you have EventSystem in the hierarchy before using EventSystem
+        if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
         {
-            highlight = raycastHit.transform;
-            if (highlight.CompareTag("OutlineSelectSimple") && highlight != null && !ConversationManager.Instance.IsConversationStillActive) // Check if the conversation is over
+            Transform hitTransform = raycastHit.transform;
+
+            // Check for a valid target with the required tag
+            if (hitTransform.CompareTag("OutlineSelectSimple") && !ConversationManager.Instance.IsConversationStillActive)
             {
-                Outline outline = highlight.gameObject.GetComponent<Outline>();
-                
-                if (outline != null)
+                currentHighlight = hitTransform;  // Set the current highlight
+                Outline outline = currentHighlight.gameObject.GetComponent<Outline>();
+
+                if (outline == null)
                 {
-                    outline.enabled = true;
-                }
-                else
-                {
-                    outline = highlight.gameObject.AddComponent<Outline>();
-                    outline.enabled = true;
+                    // Add Outline component if it doesn't already exist
+                    outline = currentHighlight.gameObject.AddComponent<Outline>();
                 }
 
-                // Always update OutlineWidth when highlight changes
+                // Configure the outline properties
                 outline.OutlineColor = Color.magenta;
-                outline.OutlineWidth = outlineWidth;  // Use the SerializeField outlineWidth
-            }
-            else
-            {
-                highlight = null;
+                outline.OutlineWidth = outlineWidth;
+                outline.enabled = true;  // Enable the outline
             }
         }
     }

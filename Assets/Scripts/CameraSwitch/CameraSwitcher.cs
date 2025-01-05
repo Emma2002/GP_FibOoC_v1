@@ -20,7 +20,7 @@ public class SmoothCameraSwitcher : MonoBehaviour
 
         if (conversationManager == null)
         {
-            Debug.LogError("ConversationManager not found in the scene!");
+            // Debug.LogError("ConversationManager not found in the scene!");
             return;
         }
 
