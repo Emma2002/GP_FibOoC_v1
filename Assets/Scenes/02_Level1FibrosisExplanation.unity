@@ -5870,7 +5870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineThickness: 0
-  hoverOutlineThickness: 0.013
+  hoverOutlineThickness: 0.02
 --- !u!114 &275985222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10252,6 +10252,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Lung
+--- !u!114 &498083074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498083062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 70
 --- !u!4 &500123387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4898168476347834, guid: 0464c51f3e579bd4ca5150116cebfe97, type: 3}
@@ -22207,6 +22220,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Liver
+--- !u!114 &1124723169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124723157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 70
 --- !u!4 &1126236322 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e4e11ea820df4144a80c5d1d3d605107, type: 3}
@@ -30364,6 +30390,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Heart
+--- !u!114 &1506150794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506150782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 70
 --- !u!4 &1506912512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ddd4e0df3ec62434ebc8a1ed9d649589, type: 3}
@@ -35339,6 +35378,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Intestines
+--- !u!114 &1738818102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738818090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 70
 --- !u!4 &1743555686 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1971085608484540914, guid: 90dbb427ac5963541b1cdbc7520999e3, type: 3}
@@ -36679,7 +36731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1801551874
 AudioListener:
   m_ObjectHideFlags: 0
@@ -36747,8 +36799,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801551873}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.47, y: 1.069, z: -19.27}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.47000003, y: 1.069, z: -19.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38901,6 +38953,9 @@ PrefabInstance:
       addedObject: {fileID: 1506150787}
     - targetCorrespondingSourceObject: {fileID: 4520014937643568572, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1506150794}
+    - targetCorrespondingSourceObject: {fileID: 4520014937643568572, guid: a87b0482540e502468601e933ef8990a, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1506150786}
     - targetCorrespondingSourceObject: {fileID: 4520014937643568572, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
@@ -38910,6 +38965,9 @@ PrefabInstance:
       addedObject: {fileID: 1738818094}
     - targetCorrespondingSourceObject: {fileID: -3087400156918018835, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1738818102}
+    - targetCorrespondingSourceObject: {fileID: -3087400156918018835, guid: a87b0482540e502468601e933ef8990a, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1738818095}
     - targetCorrespondingSourceObject: {fileID: -3087400156918018835, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
@@ -38917,6 +38975,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4915275106878212877, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1124723161}
+    - targetCorrespondingSourceObject: {fileID: -4915275106878212877, guid: a87b0482540e502468601e933ef8990a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1124723169}
     - targetCorrespondingSourceObject: {fileID: -4915275106878212877, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1124723162}
@@ -38938,6 +38999,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -557217529462810777, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 498083066}
+    - targetCorrespondingSourceObject: {fileID: -557217529462810777, guid: a87b0482540e502468601e933ef8990a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 498083074}
     - targetCorrespondingSourceObject: {fileID: -557217529462810777, guid: a87b0482540e502468601e933ef8990a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 498083070}
