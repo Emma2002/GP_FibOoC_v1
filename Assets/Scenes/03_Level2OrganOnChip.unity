@@ -166,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f92062662d50d489035a47ae0b7276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 150
-  sensY: 150
+  sensX: 100
+  sensY: 100
   orientation: {fileID: 538916110}
 --- !u!81 &39401684
 AudioListener:
@@ -8422,8 +8422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63f4b9bd5b8d4774e8f29a940d11d98b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
-  groundDrag: 5
+  moveSpeed: 4
+  groundDrag: 1
   jumpForce: 12
   jumpCooldown: 0.25
   airMultiplier: 0.4
