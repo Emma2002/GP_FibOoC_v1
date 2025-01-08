@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
-public class SmoothCameraSwitcher : MonoBehaviour
+public class CameraSwitcher : MonoBehaviour
 {
     [Header("Camera Settings")]
     [SerializeField] private List<Camera> cameras; // List of cameras to switch between (assign in the Inspector)

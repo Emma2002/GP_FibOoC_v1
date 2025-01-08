@@ -6,7 +6,7 @@ public class ConversationStarterAtLevel : MonoBehaviour
 {
     [Header("Conversation Settings")]
     [SerializeField] private NPCConversation myConversation;
-    [SerializeField] private SmoothCameraSwitcher cameraSwitcher; // Reference to the CameraSwitcher
+    [SerializeField] private CameraSwitcher cameraSwitcher; // Reference to the CameraSwitcher
     private ConversationManager conversationManager;
     private bool conversationStarted = false;
     [SerializeField] private float delayTime = 0.15f; // Delay time before starting the conversation (in seconds)
