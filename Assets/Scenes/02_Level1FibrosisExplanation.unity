@@ -5297,6 +5297,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5468512139057648038, guid: cbb3159864b0a1348ab992ae9813d64d, type: 3}
   m_PrefabInstance: {fileID: 1842435410}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &248598035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248598036}
+  - component: {fileID: 248598037}
+  m_Layer: 5
+  m_Name: VideoFibroblast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &248598036
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248598035}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1102562545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &248598037
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248598035}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 7e60e7c800c04ca41a404ebe18c7b779, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 56a3f06081da3704db7bab7942e14bee, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
 --- !u!1001 &250611936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7980,6 +8052,7 @@ RectTransform:
   - {fileID: 1205529522}
   - {fileID: 60666745}
   - {fileID: 1515015680}
+  - {fileID: 1102562545}
   - {fileID: 1794374352}
   m_Father: {fileID: 83352165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8154,10 +8227,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 14
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":31.6000061,"yPos":246.999817},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay.","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"cellCount","IntValue":0},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":false}],"NodeUID":9},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":true}],"NodeUID":13}],"EditorInfo":{"isRoot":true,"xPos":234.6,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"These
-    are the ECM component! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"cellCount","CheckType":0,"RequiredValue":0}],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":55.6000061,"yPos":153.600037},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Select
-    a different cell to learn more","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":364.799957,"yPos":139.200012},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"test","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 17
+  json: '{"Options":[],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"cellCount","IntValue":0},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowECMVideo","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":153,"yPos":97},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":false}],"TMPFontGUID":null,"Text":"These
+    are the ECM component! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":140,"yPos":276},"ID":15,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":true}],"TMPFontGUID":null,"Text":"These
+    are sort of structures that support theeeee","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":126,"yPos":408},"ID":16,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":false}],"TMPFontGUID":null,"Text":null,"parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
@@ -8166,7 +8239,6 @@ MonoBehaviour:
   - {fileID: 1689167938}
   - {fileID: 1689167940}
   - {fileID: 1689167939}
-  - {fileID: 1689167941}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -21577,6 +21649,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Extracellular matrix
+--- !u!1 &1102562542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102562545}
+  - component: {fileID: 1102562544}
+  - component: {fileID: 1102562543}
+  m_Layer: 5
+  m_Name: VideoScreenECM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1102562543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102562542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 56a3f06081da3704db7bab7942e14bee, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1102562544
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102562542}
+  m_CullTransparentMesh: 1
+--- !u!224 &1102562545
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102562542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 248598036}
+  m_Father: {fileID: 339891476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1103637518
 GameObject:
   m_ObjectHideFlags: 0
@@ -29453,6 +29598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1377731748}
   - component: {fileID: 1377731749}
+  - component: {fileID: 1377731750}
   m_Layer: 0
   m_Name: ConversationStarter
   m_TagString: Untagged
@@ -29490,6 +29636,22 @@ MonoBehaviour:
   myConversation: {fileID: 368924655}
   specificOrganTag: {fileID: 11400000, guid: cead9a6bf9ac06f45a2db7d3ff4810c1, type: 2}
   outlineTag: OutlineSelect
+--- !u!114 &1377731750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377731747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0f5682a1bde4c64db219544f6ada829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imageComponent: {fileID: 1102562542}
+  startVideoBool: ShowECMVideo
+  dialogueScreen: {fileID: 1765245020}
+  yPositionChange: -300
 --- !u!1001 &1386623350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36333,7 +36495,6 @@ GameObject:
   - component: {fileID: 1689167938}
   - component: {fileID: 1689167940}
   - component: {fileID: 1689167939}
-  - component: {fileID: 1689167941}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -36390,9 +36551,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
-  NodeID: 10
+  NodeID: 16
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!114 &1689167940
 MonoBehaviour:
@@ -36409,28 +36570,9 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
-  NodeID: 9
+  NodeID: 15
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1689167941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689167934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 13
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
+  Icon: {fileID: 21300000, guid: 938c8d59508727d4eaf3bd275394b65e, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1689589564 stripped
 Transform:
@@ -38291,10 +38433,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 14
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-40.80014,"yPos":377.400024},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowFibroblastVideo","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":185,"yPos":-64},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"These
-    are the fibroblasts! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":4.40003967,"yPos":231.599976},"ID":9,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"Press
-    a different cell to learn more","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":false}],"NodeUID":9},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":true}],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":74.79996,"yPos":76.3999939},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":true}],"TMPFontGUID":null,"Text":"Here
-    you can see how a fibroblast transforms to a Myofibroblast, this is because................................","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":324.8,"yPos":231.600037},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"test","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-61.80014,"yPos":589.4},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowFibroblastVideo","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":164,"yPos":148},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"These
+    are the fibroblasts! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-16.59996,"yPos":443.599976},"ID":9,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"Press
+    a different cell to learn more","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":false}],"NodeUID":9},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":true}],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":53.7999573,"yPos":288.4},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":true}],"TMPFontGUID":null,"Text":"Here
+    you can see how a fibroblast transforms to a Myofibroblast, this is because................................","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":303.8,"yPos":443.600037},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"test","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
