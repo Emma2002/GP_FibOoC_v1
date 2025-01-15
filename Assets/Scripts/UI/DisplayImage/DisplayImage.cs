@@ -11,37 +11,39 @@ public class DisplayImage : MonoBehaviour
     [SerializeField] private float yPositionChange;
 
     private float originalFloatY;
-    void Start()
+     void Start()
     {
-        // Get the Image component and hide the image initially
+        // Initially hide the image and store the original dialogue screen position
         imageComponent.gameObject.SetActive(false);
-
         originalFloatY = dialogueScreen.transform.position.y;
-        // Debug.Log("The original Float issssssss: " + originalFloatY);
-        
-        // SetDialogueScreenPosition(false);
-      
     }
 
     void Update()
     {
-        // Check if the boolean has changed and update the image visibility
-        bool showImage = ConversationManager.Instance.GetBool(startVideoBool);
-        // Debug.Log("Status of the image bool: " + showImage);
-        // Debug.Log(ConversationManager.Instance.GetBool(startVideoBool));
-        
-        if (ConversationManager.Instance.GetBool(startVideoBool) == true)
+        // Only update when the state of the imageComponent needs to change
+        if (ConversationManager.Instance.GetBool(startVideoBool))
         {
-            imageComponent.gameObject.SetActive(true);
-            dialogueScreen.transform.position = new Vector3(dialogueScreen.transform.position.x, originalFloatY + yPositionChange, dialogueScreen.transform.position.z);
-
+            if (!imageComponent.activeSelf) // Only activate if not already active
+            {
+                imageComponent.gameObject.SetActive(true);
+                dialogueScreen.transform.position = new Vector3(
+                    dialogueScreen.transform.position.x,
+                    originalFloatY + yPositionChange,
+                    dialogueScreen.transform.position.z
+                );
+            }
         }
-        if (ConversationManager.Instance.GetBool(startVideoBool) == false)
+        else
         {
-            imageComponent.gameObject.SetActive(false);
-            dialogueScreen.transform.position = new Vector3(dialogueScreen.transform.position.x, originalFloatY, dialogueScreen.transform.position.z);
-
-        }   
+            if (imageComponent.activeSelf) // Only deactivate if already active
+            {
+                imageComponent.gameObject.SetActive(false);
+                dialogueScreen.transform.position = new Vector3(
+                    dialogueScreen.transform.position.x,
+                    originalFloatY,
+                    dialogueScreen.transform.position.z
+                );
+            }
+        }
     }
-
 }
