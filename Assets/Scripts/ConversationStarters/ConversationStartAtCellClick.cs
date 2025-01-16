@@ -67,6 +67,7 @@ public class ConversationStartAtCellClick : MonoBehaviour
                     clickedCells.Add(clickedObject);
                     triggeredConversations.Add(specificOrganTag);
                     cellCount++;
+                    ConversationManager.Instance.SetInt("DialogueCellCount", cellCount);
                     Debug.Log("Cell clicked: " + clickedObject.name + ", Count: " + cellCount);
 
                     // Start the conversation

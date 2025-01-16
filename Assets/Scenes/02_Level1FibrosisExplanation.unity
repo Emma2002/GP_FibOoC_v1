@@ -592,45 +592,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 68
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":168.10022,\"yPos\":2080.19922},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okay\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-231.100464,\"yPos\":384.799},\"ID\":16,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"
-    A thickening of tissue caused by fat accumulation\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":14.4992065,\"yPos\":388.798523},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"
-    Inflammation\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":228.900024,\"yPos\":390.398865},\"ID\":18,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Scar
-    tissue\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":493.700684,\"yPos\":386.398621},\"ID\":19,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"A
-    reversible tissue regeneration process\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-255.100464,\"yPos\":722.401062},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
-    heart\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-31.10022,\"yPos\":721.6009},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
-    lungs\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5003,\"yPos\":724.8011},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
-    skin\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":441.700073,\"yPos\":717.6008},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
-    liver\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":660.099731,\"yPos\":719.2008},\"ID\":31,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"All
-    of the above\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-162.300049,\"yPos\":1036.00012},\"ID\":48,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":70.49951,\"yPos\":1042.40015},\"ID\":49,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":314.499878,\"yPos\":1026.4},\"ID\":50,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-238.499878,\"yPos\":1386.598},\"ID\":55,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Chronic
-    infections\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-21.0999146,\"yPos\":1393.99817},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Excessive
-    exercise \",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":222.49939,\"yPos\":1398.598},\"ID\":57,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Toxins
-    like alcohol or cigarette smoke\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":421.10022,\"yPos\":1400.39807},\"ID\":58,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Repeated
-    injury or inflammation\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":649.500244,\"yPos\":1397.59851},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dehydration
-    \",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":556.900757,\"yPos\":1030.39978},\"ID\":61,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[39],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":129.5,\"yPos\":-22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":162.10022,\"yPos\":1306.19922},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Okay\",\"parentUIDs\":[2],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-237.100464,\"yPos\":-389.201},\"ID\":16,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"
+    A thickening of tissue caused by fat accumulation\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":8.499207,\"yPos\":-385.201477},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"
+    Inflammation\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":23}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":222.900024,\"yPos\":-383.601135},\"ID\":18,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Scar
+    tissue\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":487.700684,\"yPos\":-387.601379},\"ID\":19,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"A
+    reversible tissue regeneration process\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-261.100464,\"yPos\":-51.598938},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    heart\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-37.10022,\"yPos\":-52.39911},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    lungs\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.5003,\"yPos\":-49.1989136},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    skin\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":435.700073,\"yPos\":-56.39917},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    liver\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":654.099731,\"yPos\":-54.7991943},\"ID\":31,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"All
+    of the above\",\"parentUIDs\":[26],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-168.300049,\"yPos\":262.000122},\"ID\":48,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"5%\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":64.49951,\"yPos\":268.400146},\"ID\":49,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"25%\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":308.499878,\"yPos\":252.400024},\"ID\":50,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"45%\",\"parentUIDs\":[39],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-244.499878,\"yPos\":612.598},\"ID\":55,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Chronic
+    infections\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-27.0999146,\"yPos\":619.998169},\"ID\":56,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Excessive
+    exercise \",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":216.49939,\"yPos\":624.598},\"ID\":57,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Toxins
+    like alcohol or cigarette smoke\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":415.10022,\"yPos\":626.3981},\"ID\":58,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Repeated
+    injury or inflammation\",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":643.500244,\"yPos\":623.5985},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dehydration
+    \",\"parentUIDs\":[54],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":550.900757,\"yPos\":256.39978},\"ID\":61,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"75%\",\"parentUIDs\":[39],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"BoolValue\":false},{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":123.5,\"yPos\":-796},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
     to the lab! Fibrosis is a complex process that can affect many different parts
     of the body. Today, we'll explore what fibrosis is, how it impacts organs, and
-    how scientists are studying it to develop new treatments. \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":167.7002,\"yPos\":1895.39832},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Choose
-    one organ to get started:\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":135.299988,\"yPos\":225.400513},\"ID\":15,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Let\u2019s
-    start with the basics. What does fibrosis mean to you?\",\"parentUIDs\":[67],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-27.9005127,\"yPos\":501.000061},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
+    how scientists are studying it to develop new treatments. \",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":161.7002,\"yPos\":1121.39832},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Choose
+    one organ to get started:\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":129.299988,\"yPos\":-548.5995},\"ID\":15,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Let\u2019s
+    start with the basics. What does fibrosis mean to you?\",\"parentUIDs\":[67],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-33.9005127,\"yPos\":-272.999939},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
     incorrect. Fibrosis refers to scar tissue that forms when the body tries to repair
     itself. It's a condition that can affect organs and tissues by reducing their
-    flexibility and function.\",\"parentUIDs\":[16,19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":348.0996,\"yPos\":503.400024},\"ID\":23,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
+    flexibility and function.\",\"parentUIDs\":[16,19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":342.0996,\"yPos\":-270.599976},\"ID\":23,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
     right! Fibrosis refers to scar tissue that forms as part of the body\u2019s healing
-    response to damage or inflammation.\",\"parentUIDs\":[17,18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":139.299988,\"yPos\":615.400269},\"ID\":26,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Which
-    organ(s) can be affected by fibrosis?\\n\",\"parentUIDs\":[21,23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-99.90027,\"yPos\":809.8015},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
+    response to damage or inflammation.\",\"parentUIDs\":[17,18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":133.299988,\"yPos\":-158.599731},\"ID\":26,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Which
+    organ(s) can be affected by fibrosis?\\n\",\"parentUIDs\":[21,23],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-105.900269,\"yPos\":35.8015137},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
     incorrect. Fibrosis can affect multiple organs, including the heart, lungs, skin,
-    and liver. The correct answer is all of the above.\",\"parentUIDs\":[27,28,29,30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195.300232,\"yPos\":1706.39929},\"ID\":36,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Let's
-    investigate how fibrosis works by studying specific organs.\\n\",\"parentUIDs\":[62,63,65],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.099854,\"yPos\":890.6012},\"ID\":39,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"To
-    your opinion, how many people in the Netherlands are or will be affected by fibrosis\",\"parentUIDs\":[32,40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":456.1001,\"yPos\":809.001343},\"ID\":40,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Exactly!
-    Fibrosis can affect the heart, lungs, skin, and liver.\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":184.7002,\"yPos\":1132.40149},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Some
-    Info about the image\\/video\",\"parentUIDs\":[48,49,50,61],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.1001,\"yPos\":1260.39844},\"ID\":54,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"What
-    are common causes for fibrosis?\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-96.70044,\"yPos\":1553.9989},\"ID\":62,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
+    and liver. The correct answer is all of the above.\",\"parentUIDs\":[27,28,29,30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":189.300232,\"yPos\":932.3993},\"ID\":36,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Let's
+    investigate how fibrosis works by studying specific organs.\\n\",\"parentUIDs\":[62,63,65],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181.099854,\"yPos\":116.6012},\"ID\":39,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"How
+    many people in the Netherlands are or will be affected by fibrosis?\",\"parentUIDs\":[32,40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":450.1001,\"yPos\":35.0013428},\"ID\":40,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Exactly!
+    Fibrosis can affect the heart, lungs, skin, and liver.\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178.7002,\"yPos\":358.4015},\"ID\":51,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Some
+    Info about the image\\/video\",\"parentUIDs\":[48,49,50,61],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":56},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.1001,\"yPos\":486.398438},\"ID\":54,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false},{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"ShowImageOrVideo\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"What
+    are common causes for fibrosis?\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-102.700439,\"yPos\":779.9989},\"ID\":62,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
     correct! Fibrosis is often caused by chronic infection, exposure to toxins (such
-    as alcohol or cigarette smoke), or repeated injury and inflammation.\",\"parentUIDs\":[55,57,58],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":731.8994,\"yPos\":1554.799},\"ID\":63,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That
-    is not correct. Poor hydration is not linked to fibrosis. \",\"parentUIDs\":[59],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":314.8994,\"yPos\":1543.3988},\"ID\":65,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
+    as alcohol or cigarette smoke), or repeated injury and inflammation.\",\"parentUIDs\":[55,57,58],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":725.8994,\"yPos\":780.79895},\"ID\":63,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That
+    is not correct. Poor hydration is not linked to fibrosis. \",\"parentUIDs\":[59],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":308.8994,\"yPos\":769.3988},\"ID\":65,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"That\u2019s
     not correct. Fibrosis is not caused by exessive exercise. Common causes include
     chronic infection, toxins like alcohol or cigarette smoke, and repeated injury
-    or inflammation.\",\"parentUIDs\":[56],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":138,\"yPos\":86},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+    or inflammation.\",\"parentUIDs\":[56],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":132,\"yPos\":-688},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
     have to answer questions to earn points. Sometimes multiple answers can be correct,
     so think carefully before choosing. Let\u2019s begin!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -1600,6 +1600,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1971085608484540914, guid: 90dbb427ac5963541b1cdbc7520999e3, type: 3}
   m_PrefabInstance: {fileID: 630012964}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &90793871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90793872}
+  - component: {fileID: 90793874}
+  - component: {fileID: 90793873}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &90793872
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90793871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1205529522}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 911, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &90793873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90793871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '[Infographic on the incidence of fibrosis]'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 74.55
+  m_fontSizeBase: 74.55
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &90793874
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90793871}
+  m_CullTransparentMesh: 1
 --- !u!4 &93277920 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9150597809499253185, guid: 82efbd6f209a6ab4c8e561fcd37a4810, type: 3}
@@ -5283,7 +5419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f5682a1bde4c64db219544f6ada829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageComponent: {fileID: 60666744}
+  imageComponent: {fileID: 1205529521}
   startVideoBool: ShowImageOrVideo
   dialogueScreen: {fileID: 1765245020}
   yPositionChange: -300
@@ -8227,10 +8363,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 17
-  json: '{"Options":[],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"cellCount","IntValue":0},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowECMVideo","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":153,"yPos":97},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":false}],"TMPFontGUID":null,"Text":"These
-    are the ECM component! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":140,"yPos":276},"ID":15,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":true}],"TMPFontGUID":null,"Text":"These
-    are sort of structures that support theeeee","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":126,"yPos":408},"ID":16,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":false}],"TMPFontGUID":null,"Text":null,"parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  CurrentIDCounter: 19
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":388.5,"yPos":256},"ID":18,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":false}],"TMPFontGUID":null,"Text":"Next","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"DialogueCellCount","IntValue":0},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowECMVideo","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":396.5,"yPos":22},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":false}],"TMPFontGUID":null,"Text":"This
+    is the extracellular matrix","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":391.5,"yPos":117},"ID":15,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowECMVideo","Value":true}],"TMPFontGUID":null,"Text":"It
+    is a network of proteins that gives tissue its structure and strength. It creates
+    a complex support system that helps cells function properly","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
@@ -8238,7 +8375,7 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 1689167938}
   - {fileID: 1689167940}
-  - {fileID: 1689167939}
+  - {fileID: 1689167941}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -8336,10 +8473,8 @@ GameObject:
   m_Component:
   - component: {fileID: 382208090}
   - component: {fileID: 382208093}
-  - component: {fileID: 382208095}
   - component: {fileID: 382208094}
   - component: {fileID: 382208096}
-  - component: {fileID: 382208097}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -8400,25 +8535,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &382208095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382208089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 9
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
-  Audio: {fileID: 0}
 --- !u!114 &382208096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8437,25 +8553,6 @@ MonoBehaviour:
   NodeID: 11
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &382208097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382208089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 13
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   Audio: {fileID: 0}
 --- !u!1001 &384562877
 PrefabInstance:
@@ -9533,10 +9630,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 9
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":295.199982,\"yPos\":356.599976},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Let\u2019s
-    take a closer look!\",\"parentUIDs\":[],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":308.199982,\"yPos\":-68.40001},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
-    chosen the intestine! some info\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":302.199982,\"yPos\":72.59999},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"bla
-    bla bla!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":310.199982,\"yPos\":209.599991},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":383.5,\"yPos\":447},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Let\u2019s
+    take a closer look!\",\"parentUIDs\":[],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":396.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You\u2019ve
+    chosen the intestine! some info\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":390.5,\"yPos\":163},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"bla
+    bla bla!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":398.5,\"yPos\":300},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"This
     path is still in development. Please select the skin for a more complete experience.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researecher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -24423,7 +24520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1205529522
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24435,7 +24532,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 90793872}
   m_Father: {fileID: 339891476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -24463,7 +24561,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cfff83013f85b5648bd9b5b9013d166a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36494,7 +36592,7 @@ GameObject:
   - component: {fileID: 1689167935}
   - component: {fileID: 1689167938}
   - component: {fileID: 1689167940}
-  - component: {fileID: 1689167939}
+  - component: {fileID: 1689167941}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -36536,25 +36634,6 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
   Audio: {fileID: 0}
---- !u!114 &1689167939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689167934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 16
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
-  Audio: {fileID: 0}
 --- !u!114 &1689167940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36573,6 +36652,25 @@ MonoBehaviour:
   NodeID: 15
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 938c8d59508727d4eaf3bd275394b65e, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1689167941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689167934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 18
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!4 &1689589564 stripped
 Transform:
@@ -38433,20 +38531,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 14
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-61.80014,"yPos":589.4},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowFibroblastVideo","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":164,"yPos":148},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"These
-    are the fibroblasts! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":-16.59996,"yPos":443.599976},"ID":9,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"Press
-    a different cell to learn more","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":false}],"NodeUID":9},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableBoolCondition:#DialogueEditor","ParameterName":"allCellsDiscovered","CheckType":0,"RequiredValue":true}],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":53.7999573,"yPos":288.4},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":true}],"TMPFontGUID":null,"Text":"Here
-    you can see how a fibroblast transforms to a Myofibroblast, this is because................................","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":303.8,"yPos":443.600037},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"test","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":428.69986,"yPos":419.400024},"ID":10,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"Next","parentUIDs":[11],"SpeechUID":-1}],"Parameters":[{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"ShowFibroblastVideo","BoolValue":false},{"__type":"EditableBoolParameter:#DialogueEditor","ParameterName":"allCellsDiscovered","BoolValue":false}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":396.5,"yPos":22},"ID":0,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":false}],"TMPFontGUID":null,"Text":"These
+    are the fibroblasts! These are responsible for....","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":387.299957,"yPos":194.4},"ID":11,"ParamActions":[{"__type":"EditableSetBoolParamAction:#DialogueEditor","ParameterName":"ShowFibroblastVideo","Value":true}],"TMPFontGUID":null,"Text":"Here
+    you can see how a fibroblast transforms to a Myofibroblast, this is because................................","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 21300000, guid: 84b8def2aa7ffa544a3f9ca696ce9cf8, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 382208093}
-  - {fileID: 382208095}
   - {fileID: 382208094}
   - {fileID: 382208096}
-  - {fileID: 382208097}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -43869,7 +43964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 11
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":237.199982,\"yPos\":204.599976},\"ID\":10,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"SwitchToResearchLevel\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Okay.\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"SwitchToResearchLevel\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":234.6,\"yPos\":22},\"ID\":0,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"SwitchToResearchLevel\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Now
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":399.099976,\"yPos\":204.599976},\"ID\":10,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"SwitchToResearchLevel\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"Okay.\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"SwitchToResearchLevel\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":396.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"SwitchToResearchLevel\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"Now
     that we\u2019ve learned about fibrosis and the key players involved, let\u2019s
     explore how researchers study it using cutting-edge tools like organ-on-chip
     models.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
