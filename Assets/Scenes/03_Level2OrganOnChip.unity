@@ -694,6 +694,7 @@ GameObject:
   - component: {fileID: 72115937}
   - component: {fileID: 72115938}
   - component: {fileID: 72115939}
+  - component: {fileID: 72115940}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -753,6 +754,25 @@ MonoBehaviour:
   NodeID: 15
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &72115940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72115936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 16
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &84532743
 GameObject:
@@ -927,9 +947,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 16
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":278.6,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    have entered the Vascularisation chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":203.199951},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+  CurrentIDCounter: 17
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":404,"yPos":306},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Continue.","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":396.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    have entered the Vascularisation chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":395.9,"yPos":203.199951},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"This
     chamber simulates the blood vessels in tissues. In fibrosis, blood vessels often
     stop working properly, making it harder for tissues to get the oxygen and nutrients
     they need. On the chip, vascular networks are modeled to study how blood vessel
@@ -941,6 +961,7 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 1739341176}
   - {fileID: 1739341177}
+  - {fileID: 1739341178}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -11606,9 +11627,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 17
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":true,"xPos":278.6,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    have entered the Mechanical Cues chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":278.800018,"yPos":140.8},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"See
+  CurrentIDCounter: 18
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":417,"yPos":290},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Continue.","parentUIDs":[16],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":true,"xPos":396.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    have entered the Mechanical Cues chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":396.7,"yPos":140.8},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"See
     how the walls begin to move, simulating the mechanical forces tissues experience.
     In fibrosis, these forces become unbalanced, triggering cells to overproduce
     ECM and worsen scarring. The organ-on-chip recreates these physical stresses
@@ -11620,6 +11641,7 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 941057801}
   - {fileID: 941057802}
+  - {fileID: 941057803}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -11737,9 +11759,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 17
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":true,"xPos":293.800018,"yPos":86.8},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    have entered the Extracellular Matrix (ECM) chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":288.4,"yPos":269.599976},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+  CurrentIDCounter: 18
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":411,"yPos":323},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Continue.","parentUIDs":[16],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":true,"xPos":396.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    have entered the Extracellular Matrix (ECM) chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":391.099976,"yPos":204.799988},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"This
     part of the organ-on-chip simulates the ECM, a network that supports cells. In
     fibrosis, the ECM is overproduced, causing stiffness and scarring that disrupt
     organ function. ","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -11750,6 +11772,7 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 1834200276}
   - {fileID: 1834200277}
+  - {fileID: 1834200278}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -17598,9 +17621,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 16
-  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":278.6,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    have entered the Hypoxia chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":301.200043,"yPos":188.8},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+  CurrentIDCounter: 17
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":416,"yPos":305},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Continue.","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":396.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    have entered the Hypoxia chamber!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":419.100037,"yPos":188.8},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"This
     chamber simulates hypoxia, or low oxygen levels, which happens when scar tissue
     blocks blood flow. Hypoxia stresses cells and makes fibrosis worse. The organ-on-chip
     recreates this low-oxygen environment to study how it impacts tissue and fibrosis.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Researcher","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -17611,6 +17634,7 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 72115938}
   - {fileID: 72115939}
+  - {fileID: 72115940}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -17646,17 +17670,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 28
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":169.899933,\"yPos\":394.600037},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ready!\",\"parentUIDs\":[27],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-84.5,\"yPos\":69.79993},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":null,\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":144.299973,\"yPos\":66.5999756},\"ID\":21,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"A
-    miniaturized model of an organ created in a small or so-called \u201Cchip\u201D
-    device\",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":365.0996,\"yPos\":69},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    computer chip that controls the body \",\"parentUIDs\":[19],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":586.7001,\"yPos\":62.5999756},\"ID\":26,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"A
-    modular model of a given tissue\\/organ that combines important components of
-    the tissue\\/organ in the human body\",\"parentUIDs\":[19],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":194.5,\"yPos\":-184},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
-    inside the organ-on-chip!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":169.099945,\"yPos\":158.000153},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"This
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-102.600067,\"yPos\":484.600037},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ready!\",\"parentUIDs\":[27],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":-65,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Welcome
+    inside the organ-on-chip!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-95.4000549,\"yPos\":210.000153},\"ID\":17,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"AnsweredCorrect\",\"Value\":false}],\"TMPFontGUID\":null,\"Text\":\"This
     advanced model simulates the key processes behind fibrosis. As you walk through
-    the chip, you\u2019ll explore each key component.\",\"parentUIDs\":[20,21,24,26],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":26},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.699951,\"yPos\":-63.60005},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Before
-    we begin your journey, let\u2019s start with a question:\\n\\nWhat is an organ-on-chip
-    model?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":170.699982,\"yPos\":282},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Use
+    the chip, you\u2019ll explore each key component.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-87.80002,\"yPos\":353},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Use
     the W, A, S, D keys to move around. Use the mouse to look around.\",\"parentUIDs\":[17],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: Researcher
@@ -17666,11 +17683,6 @@ MonoBehaviour:
   - {fileID: 1000820010}
   - {fileID: 1000820013}
   - {fileID: 1000820012}
-  - {fileID: 1000820018}
-  - {fileID: 1000820017}
-  - {fileID: 1000820016}
-  - {fileID: 1000820015}
-  - {fileID: 1000820014}
   - {fileID: 1000820019}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
@@ -17704,6 +17716,7 @@ GameObject:
   - component: {fileID: 941057800}
   - component: {fileID: 941057801}
   - component: {fileID: 941057802}
+  - component: {fileID: 941057803}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -17764,6 +17777,25 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
   Audio: {fileID: 0}
+--- !u!114 &941057803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941057799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 17
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
 --- !u!1 &947826420
 GameObject:
   m_ObjectHideFlags: 0
@@ -17809,9 +17841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 16
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":278.6,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
-    have entered the Inflammation chamber!\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":293.2,\"yPos\":144.000015},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Inflammation
+  CurrentIDCounter: 17
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":426,\"yPos\":290},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Continue.\",\"parentUIDs\":[15],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":396.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+    have entered the Inflammation chamber!\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":411.1,\"yPos\":144.000015},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Inflammation
     is the body's way of protecting itself, but when it doesn\u2019t stop, it can
     cause damage. In fibrosis, inflammation leads to more scarring and worsens the
     disease.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
@@ -17822,6 +17854,7 @@ MonoBehaviour:
   NodeSerializedDataList:
   - {fileID: 1967159493}
   - {fileID: 1967159494}
+  - {fileID: 1967159495}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -17982,11 +18015,6 @@ GameObject:
   - component: {fileID: 1000820010}
   - component: {fileID: 1000820013}
   - component: {fileID: 1000820012}
-  - component: {fileID: 1000820018}
-  - component: {fileID: 1000820017}
-  - component: {fileID: 1000820016}
-  - component: {fileID: 1000820015}
-  - component: {fileID: 1000820014}
   - component: {fileID: 1000820019}
   m_Layer: 0
   m_Name: ConversationEventInfo
@@ -18064,101 +18092,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 17
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1000820014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000820009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 26
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &1000820015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000820009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 24
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &1000820016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000820009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 21
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &1000820017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000820009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 20
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &1000820018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000820009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 19
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
   Audio: {fileID: 0}
@@ -24743,6 +24676,7 @@ GameObject:
   - component: {fileID: 1739341175}
   - component: {fileID: 1739341176}
   - component: {fileID: 1739341177}
+  - component: {fileID: 1739341178}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -24802,6 +24736,25 @@ MonoBehaviour:
   NodeID: 15
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1739341178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739341174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 16
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &1741940872
 GameObject:
@@ -25121,6 +25074,7 @@ GameObject:
   - component: {fileID: 1834200275}
   - component: {fileID: 1834200276}
   - component: {fileID: 1834200277}
+  - component: {fileID: 1834200278}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -25180,6 +25134,25 @@ MonoBehaviour:
   NodeID: 16
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1834200278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834200274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 17
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1001 &1889471854
 PrefabInstance:
@@ -25919,6 +25892,7 @@ GameObject:
   - component: {fileID: 1967159492}
   - component: {fileID: 1967159493}
   - component: {fileID: 1967159494}
+  - component: {fileID: 1967159495}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -25978,6 +25952,25 @@ MonoBehaviour:
   NodeID: 15
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: f8fa77a73f83be84aaaea9c3bd95a18c, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1967159495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967159491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 16
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
 --- !u!1 &1975794649
 GameObject:
@@ -26242,7 +26235,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 19
-  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":522.4,\"yPos\":149.400024},\"ID\":18,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"SwitchEndMenu\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"End\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"SwitchEndMenu\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":535.8,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Congratulations!
+  json: "{\"Options\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":395.100037,\"yPos\":245.400024},\"ID\":18,\"ParamActions\":[{\"__type\":\"EditableSetBoolParamAction:#DialogueEditor\",\"ParameterName\":\"SwitchEndMenu\",\"Value\":true}],\"TMPFontGUID\":null,\"Text\":\"End
+    the game\",\"parentUIDs\":[0],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"SwitchEndMenu\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":406.5,\"yPos\":120},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Congratulations!
     You\u2019ve explored all five chambers in the organ-on-chip model, each simulating
     a key part of fibrosis.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Researcher\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":1}]}"
   saveVersion: 110
