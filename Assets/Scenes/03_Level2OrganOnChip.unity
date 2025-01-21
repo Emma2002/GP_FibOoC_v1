@@ -1326,7 +1326,7 @@ Transform:
   m_GameObject: {fileID: 174589946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: 1.1, z: -86.7}
+  m_LocalPosition: {x: -40, y: 1.2, z: -86.7}
   m_LocalScale: {x: 38.467266, y: 15.182961, z: 47.571835}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12029,11 +12029,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3781619671198568340, guid: 046fc83fcc681304c8737716697428b2, type: 3}
---- !u!4 &456976728 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 046fc83fcc681304c8737716697428b2, type: 3}
-  m_PrefabInstance: {fileID: 1513276411}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &463685893
 GameObject:
   m_ObjectHideFlags: 0
@@ -17965,6 +17960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e46cd1305938834ca60bff3d862ba50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleSystem: {fileID: 1275248145}
 --- !u!1 &802884637 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 359312179909449575, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
@@ -31360,7 +31356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c03096b8f20e1d439f9f05d538a34c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 456976728}
+  targetObject: {fileID: 622587063}
   pulseIntensity: 0.03
   pulseSpeed: 2
 --- !u!1 &1949220664
