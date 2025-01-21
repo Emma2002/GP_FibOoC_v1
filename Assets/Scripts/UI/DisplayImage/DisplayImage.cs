@@ -20,7 +20,7 @@ public class DisplayImage : MonoBehaviour
     {
         // Initially hide the image and store the original dialogue screen position
         imageComponent.gameObject.SetActive(false);
-        originalFloatY = dialogueScreen.transform.position.y;
+        originalFloatY = dialogueScreen.transform.localPosition.y;
 
         // Set the videoPlayer's URL to the video file in StreamingAssets
         videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
@@ -34,10 +34,10 @@ public class DisplayImage : MonoBehaviour
             if (!imageComponent.activeSelf) // Only activate if not already active
             {
                 imageComponent.gameObject.SetActive(true);
-                dialogueScreen.transform.position = new Vector3(
-                    dialogueScreen.transform.position.x,
+                dialogueScreen.transform.localPosition = new Vector3(
+                    dialogueScreen.transform.localPosition.x,
                     originalFloatY + yPositionChange,
-                    dialogueScreen.transform.position.z
+                    dialogueScreen.transform.localPosition.z
                 );
 
                 // Play the video
@@ -52,10 +52,10 @@ public class DisplayImage : MonoBehaviour
             if (imageComponent.activeSelf) // Only deactivate if already active
             {
                 imageComponent.gameObject.SetActive(false);
-                dialogueScreen.transform.position = new Vector3(
-                    dialogueScreen.transform.position.x,
+                dialogueScreen.transform.localPosition = new Vector3(
+                    dialogueScreen.transform.localPosition.x,
                     originalFloatY,
-                    dialogueScreen.transform.position.z
+                    dialogueScreen.transform.localPosition.z
                 );
 
                 // Stop the video
