@@ -1380,7 +1380,7 @@ GameObject:
   - component: {fileID: 233726590}
   - component: {fileID: 233726589}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,8 +1541,8 @@ RectTransform:
   - {fileID: 1913964363}
   - {fileID: 1285556194}
   - {fileID: 233726588}
-  - {fileID: 865182591}
   - {fileID: 1586064244}
+  - {fileID: 865182591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -29794,7 +29794,7 @@ GameObject:
   - component: {fileID: 1586064246}
   - component: {fileID: 1586064245}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
