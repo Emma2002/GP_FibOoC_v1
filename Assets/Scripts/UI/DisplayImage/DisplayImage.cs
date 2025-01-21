@@ -1,21 +1,29 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DialogueEditor;
+using UnityEngine.Video; // Import Video namespace
+
 public class DisplayImage : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private GameObject imageComponent;
     [SerializeField] private string startVideoBool;
     [SerializeField] private GameObject dialogueScreen;
 
     [SerializeField] private float yPositionChange;
 
+    [SerializeField] private VideoPlayer videoPlayer; // Reference to the VideoPlayer component
+    [SerializeField] private string videoFileName; // Name of the video file (e.g., "myVideo.mp4")
+
     private float originalFloatY;
-     void Start()
+
+    void Start()
     {
         // Initially hide the image and store the original dialogue screen position
         imageComponent.gameObject.SetActive(false);
         originalFloatY = dialogueScreen.transform.position.y;
+
+        // Set the videoPlayer's URL to the video file in StreamingAssets
+        videoPlayer.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoFileName);
     }
 
     void Update()
@@ -31,6 +39,12 @@ public class DisplayImage : MonoBehaviour
                     originalFloatY + yPositionChange,
                     dialogueScreen.transform.position.z
                 );
+
+                // Play the video
+                if (!videoPlayer.isPlaying)
+                {
+                    videoPlayer.Play();
+                }
             }
         }
         else
@@ -43,6 +57,12 @@ public class DisplayImage : MonoBehaviour
                     originalFloatY,
                     dialogueScreen.transform.position.z
                 );
+
+                // Stop the video
+                if (videoPlayer.isPlaying)
+                {
+                    videoPlayer.Stop();
+                }
             }
         }
     }

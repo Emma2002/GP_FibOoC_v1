@@ -1833,6 +1833,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -5351016169767576233, guid: 96bd8ece5281fdb498043fd5650d869e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1179063394}
+    - targetCorrespondingSourceObject: {fileID: -5351016169767576233, guid: 96bd8ece5281fdb498043fd5650d869e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1179063399}
+    - targetCorrespondingSourceObject: {fileID: -5351016169767576233, guid: 96bd8ece5281fdb498043fd5650d869e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1179063398}
     - targetCorrespondingSourceObject: {fileID: 6696557704859917583, guid: 96bd8ece5281fdb498043fd5650d869e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 56179403}
@@ -5304,6 +5310,8 @@ MonoBehaviour:
   startVideoBool: ShowImageOrVideo
   dialogueScreen: {fileID: 1765245020}
   yPositionChange: -300
+  videoPlayer: {fileID: 2023837650}
+  videoFileName: InfographicAnimation.mp4
 --- !u!4 &240635027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a419f6c4cca9daa45be9efe9e6d5d200, type: 3}
@@ -5368,7 +5376,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -5965,7 +5973,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275985220}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -6026,6 +6034,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Skin
+--- !u!114 &275985230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275985220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 4
 --- !u!1 &278034929
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,6 +8112,7 @@ RectTransform:
   - {fileID: 1515015680}
   - {fileID: 1102562545}
   - {fileID: 1794374352}
+  - {fileID: 992803501}
   m_Father: {fileID: 83352165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -16671,6 +16693,7 @@ GameObject:
   - component: {fileID: 828394181}
   - component: {fileID: 828394183}
   - component: {fileID: 828394184}
+  - component: {fileID: 828394185}
   m_Layer: 6
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -16753,7 +16776,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828394177}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -16810,6 +16833,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Fibroblast
+--- !u!114 &828394185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828394177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 4
 --- !u!4 &831791671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 760634872ac8e0545aea25d92fb64cf4, type: 3}
@@ -19684,6 +19720,92 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4548950174880505872, guid: 58d93148047363d45a12c673b277817d, type: 3}
   m_PrefabInstance: {fileID: 7445462500191107302}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &992803500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992803501}
+  - component: {fileID: 992803503}
+  - component: {fileID: 992803502}
+  m_Layer: 5
+  m_Name: VideoPlayerWebGL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &992803501
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992803500}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 339891476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &992803502
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992803500}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 0}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: <noninit>
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 1
+  m_TimeUpdateMode: 2
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 0
+  m_FrameReadyEventEnabled: 0
+  m_VideoShaders: []
+--- !u!114 &992803503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992803500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c4c284b75236442a64229be3ac3787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoFileName: Assets/StreamingAssets/InfographicAnimation.mp4
 --- !u!1001 &993874817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20063,7 +20185,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013004804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -20098,6 +20220,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Extracellular matrix
+--- !u!114 &1013004818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013004804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 6
 --- !u!1001 &1014022389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21790,7 +21925,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097322767}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -21825,6 +21960,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Extracellular matrix
+--- !u!114 &1097322781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097322767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 6
 --- !u!1 &1102562542
 GameObject:
   m_ObjectHideFlags: 0
@@ -23304,7 +23452,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139893468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -23339,6 +23487,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Extracellular matrix
+--- !u!114 &1139893482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139893468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 6
 --- !u!4 &1139964374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6a6487b4b31c5b44db6e658d47143b49, type: 3}
@@ -24163,7 +24324,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179063384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -24220,6 +24381,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Fibroblast
+--- !u!114 &1179063398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179063384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 70
+--- !u!114 &1179063399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179063384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 4
 --- !u!4 &1179812088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3352945271959302864, guid: 015d07e8f9746c94eb8cd53e5b0964ab, type: 3}
@@ -28675,6 +28862,8 @@ MonoBehaviour:
   startVideoBool: ShowFibroblastVideo
   dialogueScreen: {fileID: 1765245020}
   yPositionChange: -300
+  videoPlayer: {fileID: 1708196927}
+  videoFileName: FibroblastAnimationWithText.mp4
 --- !u!1001 &1333167932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29773,6 +29962,8 @@ MonoBehaviour:
   startVideoBool: ShowECMVideo
   dialogueScreen: {fileID: 1765245020}
   yPositionChange: -300
+  videoPlayer: {fileID: 248598037}
+  videoFileName: ECMAnimation2.mp4
 --- !u!1001 &1386623350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30080,7 +30271,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -30258,6 +30449,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 99dd8bc23e55969438fb5977dcbadd63, type: 3}
       insertIndex: -1
       addedObject: {fileID: 275985221}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 99dd8bc23e55969438fb5977dcbadd63, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 275985230}
   m_SourcePrefab: {fileID: 100100000, guid: 99dd8bc23e55969438fb5977dcbadd63, type: 3}
 --- !u!1 &1411127154
 GameObject:
@@ -34493,6 +34687,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 359312179909449575, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1013004814}
+    - targetCorrespondingSourceObject: {fileID: 359312179909449575, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1013004818}
     - targetCorrespondingSourceObject: {fileID: 2909892177943757418, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139893471}
@@ -34505,6 +34702,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2909892177943757418, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139893478}
+    - targetCorrespondingSourceObject: {fileID: 2909892177943757418, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1139893482}
     - targetCorrespondingSourceObject: {fileID: -639842078103030313, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2001238020}
@@ -34517,6 +34717,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -639842078103030313, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2001238027}
+    - targetCorrespondingSourceObject: {fileID: -639842078103030313, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2001238031}
     - targetCorrespondingSourceObject: {fileID: -3367815897855678043, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2050286975}
@@ -34529,6 +34732,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -3367815897855678043, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2050286982}
+    - targetCorrespondingSourceObject: {fileID: -3367815897855678043, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2050286986}
     - targetCorrespondingSourceObject: {fileID: -4340688984279443274, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1097322770}
@@ -34541,6 +34747,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4340688984279443274, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1097322777}
+    - targetCorrespondingSourceObject: {fileID: -4340688984279443274, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1097322781}
   m_SourcePrefab: {fileID: 100100000, guid: 6b8ee430fbbac944cac3fd410850d4bf, type: 3}
 --- !u!4 &1580603886 stripped
 Transform:
@@ -37043,7 +37252,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -40302,6 +40511,7 @@ GameObject:
   - component: {fileID: 1867420115}
   - component: {fileID: 1867420117}
   - component: {fileID: 1867420118}
+  - component: {fileID: 1867420119}
   m_Layer: 6
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -40406,7 +40616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867420111}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -40441,6 +40651,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Fibroblast
+--- !u!114 &1867420119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867420111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 4
 --- !u!1 &1868488486
 GameObject:
   m_ObjectHideFlags: 0
@@ -42600,7 +42823,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001238017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -42635,6 +42858,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Extracellular matrix
+--- !u!114 &2001238031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001238017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 6
 --- !u!4 &2008026307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c46ea31fd4e9353429ec414ebc1dbceb, type: 3}
@@ -43043,7 +43279,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -43328,6 +43564,7 @@ GameObject:
   - component: {fileID: 2031096840}
   - component: {fileID: 2031096842}
   - component: {fileID: 2031096843}
+  - component: {fileID: 2031096844}
   m_Layer: 6
   m_Name: Icosphere.002
   m_TagString: Untagged
@@ -43432,7 +43669,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031096836}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -43467,6 +43704,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Fibroblast
+--- !u!114 &2031096844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031096836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 4
 --- !u!1001 &2031655991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44020,7 +44270,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050286972}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71803929f0e541d4882cd58f83b628ee, type: 3}
   m_Name: 
@@ -44055,6 +44305,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Extracellular matrix
+--- !u!114 &2050286986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050286972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f40f73f519922a43a70eeb22d200934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineWidth: 6
 --- !u!1 &2051692115
 GameObject:
   m_ObjectHideFlags: 0
