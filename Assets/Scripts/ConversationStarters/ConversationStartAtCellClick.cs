@@ -11,6 +11,7 @@ public class ConversationStartAtCellClick : MonoBehaviour
     private static int cellCount; // Counter for the number of clicks
     private static HashSet<GameObject> clickedCells = new HashSet<GameObject>(); // To store clicked fibroblast cells
     private static HashSet<Tag> triggeredConversations = new HashSet<Tag>(); // To store triggered conversations for cell types
+    
 
     private bool canClick = true;
     private float lastClickTime = 0f; // Time of the last valid click
@@ -95,4 +96,15 @@ public class ConversationStartAtCellClick : MonoBehaviour
     {
         return cellCount;
     }
+
+    public static bool IsCellClicked(GameObject cell)
+    {
+        return clickedCells.Contains(cell);
+    }
+
+     public static bool IsTagTriggered(Tag tag)
+    {
+        return triggeredConversations.Contains(tag);
+    }
+
 }

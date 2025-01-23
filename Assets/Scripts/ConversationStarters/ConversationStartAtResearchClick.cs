@@ -9,7 +9,7 @@ public class ConversationStartAtResearchClick : MonoBehaviour
     [SerializeField] private string outlineTag = "OutlineSelect"; // General outline tag (kept as a string)
 
     private static int cellCount; // Counter for the number of clicks
-    private static HashSet<GameObject> clickedCells = new HashSet<GameObject>(); // To store clicked fibroblast cells
+    private static HashSet<GameObject> clickedResearch = new HashSet<GameObject>(); // To store clicked fibroblast cells
     private static HashSet<Tag> triggeredConversations = new HashSet<Tag>(); // To store triggered conversations for cell types
 
     private bool canClick = true;
@@ -49,7 +49,7 @@ public class ConversationStartAtResearchClick : MonoBehaviour
                 if (objectTags != null && objectTags.HasTag(specificOrganTag))
                 {
                     // Prevent multiple clicks on the same cell object
-                    if (clickedCells.Contains(clickedObject))
+                    if (clickedResearch.Contains(clickedObject))
                     {
                         Debug.Log("This cell has already been clicked.");
                         return; // Exit early if the cell has already been clicked
@@ -63,7 +63,7 @@ public class ConversationStartAtResearchClick : MonoBehaviour
                     }
 
                     // Mark this specific cell and its type as clicked/triggered
-                    clickedCells.Add(clickedObject);
+                    clickedResearch.Add(clickedObject);
                     triggeredConversations.Add(specificOrganTag);
                     cellCount++;
                     Debug.Log("Cell clicked: " + clickedObject.name + ", Count: " + cellCount);
@@ -93,5 +93,14 @@ public class ConversationStartAtResearchClick : MonoBehaviour
     public static int returnCellCount()
     {
         return cellCount;
+    }
+    public static bool IsResearchClicked(GameObject research)
+    {
+        return clickedResearch.Contains(research);
+    }
+
+     public static bool IsTagTriggered(Tag tag)
+    {
+        return triggeredConversations.Contains(tag);
     }
 }
