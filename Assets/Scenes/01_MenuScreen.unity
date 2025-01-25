@@ -10907,15 +10907,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to [Game name], a Bachelor''s graduation project developed at
-    the University of Twente in collaboration with the Applied Microfluidics for
-    BioEngineering Research (AMBER) team. This educational game takes you on an interactive
-    journey to understand fibrosis.
+  m_text: 'Welcome to a Bachelor''s graduation project developed at the University
+    of Twente in collaboration with the Applied Microfluidics for BioEngineering
+    Research (AMBER) team. This educational game takes you on an interactive journey
+    to understand fibrosis.
 
 
-    This project aims to make complex scientific
-    concepts accessible and engaging. It was created to help communicate the important
-    research being done with organ-on-chip technology at the University of Twente.
+    This project aims to make complex scientific concepts
+    accessible and engaging. It was created to help communicate the important research
+    being done with organ-on-chip technology at the University of Twente.
 
 
     Developed
